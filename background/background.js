@@ -503,7 +503,7 @@ chrome.runtime.onMessage.addListener(function(quest, sender, sendResponse) {
         var end = quest.end;
         for (var index = begin; index <= end; index ++) {
             var user = users[index];
-            var url = "http://caramal-example.wanliu.biz/?id=" + user.id;
+            var url = "http://192.168.2.120:3000/?id=" + user.id;
             chrome.tabs.create({
                 url: url,
                 active: false
